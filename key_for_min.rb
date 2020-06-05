@@ -1,15 +1,15 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-def key_for_min_value(name_hash)
-    name_hash.map{|k,v| [k, v]} 
-    #map new array here
-    if name_hash == {}
-      return nil;
+
+if lowest_value == 0 || value < lowest_value
+      lowest_value = value 
+      lowest_key = key
     end
   end
-  empty_hash
+  lowest_key
 end
+
 ikea = {:chair => 25, :table => 85, :mattress => 450}
 key_for_min_value(ikea)
 # => :chair
