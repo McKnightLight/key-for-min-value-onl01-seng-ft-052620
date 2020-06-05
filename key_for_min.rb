@@ -6,12 +6,11 @@ def key_for_min_value(name_hash)
   name_hash.collect do |name,value|
     if value <= 1
       return name
-    a.sort_by { |key, value| value }.first
     end
   end
   empty_hash
 end
-
+a.sort_by { |key, value| value }.first
 ikea = {:chair => 25, :table => 85, :mattress => 450}
 key_for_min_value(ikea)
 # => :chair
